@@ -79,6 +79,11 @@ html {
   width: 30%;
 }
 
+.comment-count {
+  color: grey;
+  margin-top: 25px;
+}
+
 .action-button {
   display: flex;
 }
@@ -132,4 +137,17 @@ form {
 
 .active-link {
   background-color: lightgray !important;
+}
+
+.error-container {
+  justify-content: center;
+  display: flex;
+  align-content: center;
+  font-size: 30px;
+  margin-top: 25%;
+}
+
+.warning-icon {
+  font-size: 35px;
+  padding-right: 15px;
 }

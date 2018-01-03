@@ -38,7 +38,7 @@ class Content extends Component {
             )}
           />
           <Route exact
-            path='/posts/:id' 
+            path='/posts/:category/:id'
             render={({ match }) => (
               <Post {...this.filterPostById(posts, match.params.id)} />
             )}

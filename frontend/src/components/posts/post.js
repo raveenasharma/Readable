@@ -8,6 +8,7 @@ import { POST } from '../common/constants';
 import ActionButtons from '../common/action-buttons';
 import CommentList from '../comments/comment-list';
 import { formatDate } from 'utils/helper';
+import NotFound from '../404'
 
 const Post = (props) => {
   const { id, title, body, author, timestamp, voteScore, comments = [],
@@ -15,6 +16,9 @@ const Post = (props) => {
   
   return (
     <div>
+      {!props.title ? (<NotFound />)
+        :
+        <div>
       <div className='post-container'>
         <Vote
           onUpvote={() => onUpvotePost(id)}
@@ -30,8 +34,8 @@ const Post = (props) => {
         </div>
       </div>
       <Divider />
-      <CommentList postId={id} comments={comments} />
-    </div>
+      <CommentList postId={id} comments={comments} /> </div>}
+    </div> 
   )
 }
 
