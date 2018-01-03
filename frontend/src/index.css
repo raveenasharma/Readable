@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,500');
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+html {
+  background-color: #d3d3d340;
+}
+.main-container {
+  margin-left: 220px;
+  padding: 30px;
+  font-family: 'Roboto', Georgia, Times, serif;
+}
+
+.content {
+  grid-area: content;
+}
+
+.content-sort {
+  display: flex;
+  justify-content: flex-start;
+  margin-right: 2rem;
+}
+
+.post-list {
+  display: flex;
+  flex-flow: column;
+}
+
+.post-submenu {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10%;
+  flex-direction: row-reverse;
+}
+
+.post-detail {
+  padding: 10px;
+}
+
+.post-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.content-container-comment {
+  display: flex;
+  margin: 1rem 0;
+}
+
+.votes {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.votes-item {
+  margin-bottom: 8px;
+  margin-right: 20px;
+  line-height: 0px;
+}
+
+.timestamp {
+  font-size: 15px;
+  height: 10px;
+  color: grey;
+}
+
+.comment-detail {
+  display: flex;
+  flex-flow: column;
+}
+
+.comment-body {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.comment-container {
+  padding: 20px;
+  width: 30%;
+}
+
+.action-button {
+  display: flex;
+}
+
+.action-button-item {
+  margin-right: 12px;
+}
+
+form {
+  flex-grow: 1
+}
+
+.posts-container {
+  display: inline-flex;
+  flex-wrap: wrap;
+  width:100%;
+}
+
+.post {
+  margin:10px;
+  padding:10px;
+  width: 510px;
+}
+
+.post-content {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 320px;
+}
+
+.align-right {
+  float: right;
+}
+
+.align-left {
+  float: left;
+}
+
+.post-vote {
+  float: left;
+  position: relative;
+  margin-left: 10px;
+  margin-top: 25px;
+}
+
+.post-body {
+  font-weight: lighter;
+  padding: 10px 20px 0 0;
+}
+
+.active-link {
+  background-color: lightgray !important;
+}
